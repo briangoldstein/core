@@ -30,6 +30,12 @@
       },
       "wifi_signal_strength": {
         "default": "mdi:wifi"
+      },
+      "in_home_chime_type": {
+        "default": "mdi:bell-ring-outline"
+      },
+      "in_home_chime_status": {
+        "default": "mdi:bell-ring-outline"
       }
     },
     "switch": {

@@ -250,4 +250,16 @@ SENSOR_TYPES: tuple[RingSensorEntityDescription[Any], ...] = (
         entity_registry_enabled_default=False,
         value_fn=lambda device: device.wifi_signal_strength,
     ),
+    RingSensorEntityDescription[RingDoorBell](
+        key="in_home_chime_type",
+        translation_key="in_home_chime_type",
+        value_fn=lambda device: device.existing_doorbell_type,
+        exists_fn=lambda device: isinstance(device, RingDoorBell),
+    ),
+    RingSensorEntityDescription[RingDoorBell](
+        key="in_home_chime_status",
+        translation_key="in_home_chime_status",
+        value_fn=lambda device: device.existing_doorbell_type_enabled,
+        exists_fn=lambda device: isinstance(device, RingDoorBell),
+    ),
 )
