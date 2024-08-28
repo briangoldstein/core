@@ -79,6 +79,12 @@
       },
       "wifi_signal_strength": {
         "name": "Wi-Fi signal strength"
+      },
+      "in_home_chime_type": {
+        "name": "In-home chime type"
+      },
+      "in_home_chime_status": {
+        "name": "In-home chime enabled"
       }
     },
     "switch": {
