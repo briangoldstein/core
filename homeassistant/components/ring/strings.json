@@ -94,8 +94,11 @@
       "in_home_chime_type": {
         "name": "In-home chime type"
       },
-      "in_home_chime_status": {
+      "in_home_chime_enabled": {
         "name": "In-home chime enabled"
+      },
+      "in_home_chime_duration": {
+        "name": "In-home chime duration"
       }
     },
     "switch": {
