@@ -34,7 +34,7 @@
       "in_home_chime_type": {
         "default": "mdi:bell-ring-outline"
       },
-      "in_home_chime_enabled": {
+      "in_home_chime_enabled_read": {
         "default": "mdi:bell-ring-outline"
       },
       "in_home_chime_duration": {
