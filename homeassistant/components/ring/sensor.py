@@ -257,17 +257,10 @@ SENSOR_TYPES: tuple[RingSensorEntityDescription[Any], ...] = (
         exists_fn=lambda device: isinstance(device, RingDoorBell),
     ),
     RingSensorEntityDescription[RingDoorBell](
-        key="in_home_chime_enabled",
-        translation_key="in_home_chime_enabled",
+        key="in_home_chime_enabled_read",
+        translation_key="in_home_chime_enabled_read",
         value_fn=lambda device: device.existing_doorbell_type_enabled,
         exists_fn=lambda device: isinstance(device, RingDoorBell)
         and device.existing_doorbell_type in ["Mechanical", "Digital"],
-    ),
-    RingSensorEntityDescription[RingDoorBell](
-        key="in_home_chime_duration",
-        translation_key="in_home_chime_duration",
-        value_fn=lambda device: device.existing_doorbell_type_enabled,
-        exists_fn=lambda device: isinstance(device, RingDoorBell)
-        and device.existing_doorbell_type == "Digital",
     ),
 )

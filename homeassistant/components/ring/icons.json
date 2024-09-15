@@ -36,14 +36,17 @@
       },
       "in_home_chime_enabled_read": {
         "default": "mdi:bell-ring-outline"
-      },
-      "in_home_chime_duration": {
-        "default": "mdi:bell-ring-outline"
       }
     },
     "switch": {
       "siren": {
         "default": "mdi:alarm-bell"
+      },
+      "in_home_chime_enabled": {
+        "default": "mdi:bell-ring-outline",
+        "state": {
+          "on": "mdi:bell-ring"
+        }
       }
     }
   }
